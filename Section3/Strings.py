@@ -22,4 +22,6 @@ ageInWords = "2 years"
 print(age)
 print(type(age))
 
+# If you were to bind a string to age you would avoid an error in\
+# the next statement
 print(name + " is " + age + " years old")
