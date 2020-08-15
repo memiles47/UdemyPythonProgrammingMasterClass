@@ -15,3 +15,10 @@ print(parrot[8])
 print()
 
 print(parrot[0:6])  # Norweg
+print(parrot[-14:-8])
+
+print(parrot[-4:-2])
+print(parrot[-4:12])
+
+print(parrot[-4:])
+print(parrot[-13:-11])
