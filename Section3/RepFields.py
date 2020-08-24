@@ -8,7 +8,9 @@ print("THere are {0} days in Jan, Mar, Mar, Jul, Aug, Oct and Dec".format(31))
 print("Jan: {2}\nFeb: {0}\nMar: {2}\nApr: {1}\nMay: {2}\nJun: {1}\n"
       "Jul: {2}\nAug: {2}\nSep: {1}\nOct: {2}\nNov: {1}\nDec: {2}"
       .format("28 or 29", 30, 31))
+
 print()
+
 print("""Jan: {2}
 Feb: {0}
 Mar: {2}
