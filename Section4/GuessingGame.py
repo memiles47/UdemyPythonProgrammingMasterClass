@@ -1,5 +1,5 @@
 __author__ = "Michael E Miles"
-answer = 5
+answer = 5  # Starting guess
 print("Please guess a number between 1 and 10: ")
 guess = int(input())
 
