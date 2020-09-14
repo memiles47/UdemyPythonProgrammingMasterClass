@@ -1,7 +1,7 @@
 __author__ = "Michael E Miles"
-day = "Saturday"
-temperature = 30
-raining = True
+day = "Saturday"  # String variable
+temperature = 30  # Integer variable
+raining = True  # Boolean variable
 
 if (day == "Saturday" and temperature > 27) or not raining:
     print("Go swimming")
