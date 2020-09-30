@@ -1,6 +1,9 @@
 __author__ = "Michael E Miles"
-answer = 5  # Starting guess
-print("Please guess a number between 1 and 10: ")
+import random
+highest = 100
+answer = random.randint(1, highest)
+
+print("Please guess a number between 1 and {}, enter 0 to quit: ".format(highest))
 guess = int(input())
 
 # region Second Iteration
@@ -40,7 +43,11 @@ guess = int(input())
 # region Challenge
 if guess == answer:
     print("You got it first time")
-else:
+
+while guess != answer:
+    if guess == 0:
+        print("You quit the program")
+        break
     if guess < answer:
         print("Please guess higher")
     else:  # guess must be greater than answer
@@ -48,6 +55,5 @@ else:
     guess = int(input())
     if guess == answer:
         print("Well done, you guessed it")
-    else:
-        print("Sorry, you have not guessed correctly")
+        break
 # endregion
