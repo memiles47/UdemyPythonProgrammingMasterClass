@@ -1,6 +1,7 @@
 __author__ = "Michael E Miles"
 import random
-highest = 100
+highest = 10
+countOfGuesses = 1
 answer = random.randint(1, highest)
 
 print("Please guess a number between 1 and {}, enter 0 to quit: ".format(highest))
@@ -45,6 +46,7 @@ if guess == answer:
     print("You got it first time")
 
 while guess != answer:
+    countOfGuesses += 1
     if guess == 0:
         print("You quit the program")
         break
@@ -54,6 +56,6 @@ while guess != answer:
         print("Please guess lower")
     guess = int(input())
     if guess == answer:
-        print("Well done, you guessed it")
+        print("Well done, you guessed in {} guesses, the answer was {}".format(countOfGuesses, answer))
         break
 # endregion
