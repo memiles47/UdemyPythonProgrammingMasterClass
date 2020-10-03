@@ -13,6 +13,7 @@ while True:
 
     if highLow == "h":
         print()  # Guess higher. The low end of the range becomes 1 greater than the guess.
+        # An if statement must be followed by an indented statement not a comment
 
     elif highLow == "l":
         print()  # Guess lower. The high end of the range becomes one less than the guess.
