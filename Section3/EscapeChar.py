@@ -1,10 +1,10 @@
 __author__ = "Michael E Miles"
 
-splitString = "This string has been\nsplit over\nseveral\nlines"
-print(splitString)
+split_string = "This string has been\nsplit over\nseveral\nlines"
+print(split_string)
 
-tabbedString = "1\t2\t3\t4\t5"
-print(tabbedString)
+tabbed_string = "1\t2\t3\t4\t5"
+print(tabbed_string)
 
 print('The pet shop owner said "No, no, \'e\'s uh,...he\'s resting".')
 # or
@@ -13,19 +13,19 @@ print("The pet shop owner said \"No, no, 'e's uh,...he's resting\".")
 print("""THe pet shop owner said "No, no, \
 'e's uh,...he's resting".""")
 
-anotherSplitString = """This string has been
+another_split_string = """This string has been
 split over
 several 
 lines"""
-print(anotherSplitString)
+print(another_split_string)
 
 # escape the end of line eol
-anotherSplitString2 = """This string has been \
+another_split_string2 = """This string has been \
 split over \
 several \
 lines"""
 
-print(anotherSplitString2)
+print(another_split_string2)
 
 print("C:\\Users\\Michael\\Notes.txt")
 print(r"C:\Users\Michael\Notes.txt")
