@@ -1,6 +1,6 @@
 __author__ = "Michael E Miles"
 low = 1
-high = 10
+high = 1000
 print("please think of a number between {} and {}".format(low, high))
 input("Press <ENTER> to start")
 
