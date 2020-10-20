@@ -7,5 +7,5 @@ while chosenExit not in availableExits:
         print("Game over")
         break
 
-else:  # Only executed if while ended normally
+else:
     print("aren't you glad you got out of there")
