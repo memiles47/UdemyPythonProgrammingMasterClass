@@ -1,3 +1,3 @@
 __author__ = "Michael E Miles"
-##  Challeng
+##  Challenge
 print()
