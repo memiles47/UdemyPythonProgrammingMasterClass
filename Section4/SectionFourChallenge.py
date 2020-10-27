@@ -35,3 +35,12 @@ Be careful with that one: you may start off by duplicating the code to
 print the menu but it's possible to write the program without duplicating
 the print lines.
 """
+
+choice = 9
+option_low = 1
+option_high = 10
+while choice != 0:
+    for i in range(option_low, option_high):
+        print("Option {}".format(i))
+    print("Exit: 0")
+    break
