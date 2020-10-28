@@ -1,46 +1,19 @@
 __author__ = "Michael E Miles"
-quote = """
-Write a program to print a number of options and allow the user to
-select an option from the list.
+options = ["Update Resume'", "Apply for Unemployment", "Learn Python",
+           "Work in Blender", "Make Dinner", "Go to bed", "Play Chess",
+           "Play Sudoku", "Order out"]
+option_high = 9
+choice = 100
 
-The options should be numbered from 1 to 9 - although you can use less
-than 9 options if you want.
-
-Make sure there are at least 4 options.
-
-The program should continue looping allowing the user to choose one of
-the options each time around.
-
-The loops should only terminate when the user chooses 0.
-
-If the user makes a valid choice the program should print a short message
-and the message should include the value that they typed.
-
-Don't print a different message for each choice - the only thing that
-should change is the number they typed.
-
-Although you could print the description I want show you a much better
-way of doing that later.
-
-We're keeping this simple because there are still lots of things we haven't
-covered yet.
-
-If their choice isn't one of the options in the menu, nothing should be
-printed although you will see their input on the screen.
-
-As an optional extra, modify the program so that the menu is printed 
-again if they choose an invalid option.
-
-Be careful with that one: you may start off by duplicating the code to
-print the menu but it's possible to write the program without duplicating
-the print lines.
-"""
-
-choice = 9
-option_low = 1
-option_high = 10
 while choice != 0:
-    for i in range(option_low, option_high):
-        print("Option {}".format(i))
-    print("Exit: 0")
-    break
+    if 1 <= choice <= option_high:
+        print("You chose to {}, option {}".format(options[choice - 1],
+                                                  choice))
+    else:
+        print("Please choose your option from the list below\n")
+        for i in range(1, option_high + 1):
+            print("{}:\t{}".format(i, options[i - 1]))
+        print("0:\tExit")
+
+    choice = int(input("\nPlease enter you choice (1 - {}, 0 to exit): "
+                       .format(option_high)))
