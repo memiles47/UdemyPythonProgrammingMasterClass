@@ -1,32 +1,37 @@
 __author__ = "Michael E Miles"
+available_parts = ["computer",
+                   "monitor",
+                   "keyboard",
+                   "mouse",
+                   "HDMI cable",
+                   "webcam",
+                   "microphone",
+                   "speakers"
+                   ]
+# valid_choices = [str(i) for i in range(1, len(available_parts) + 1)]
 current_choice = "-"
 computer_parts = []  # Create an empty list
+valid_choices = []
+for i in range(1, len(available_parts) + 1):
+    valid_choices.append(str(i))
 
 while current_choice != "0":
-    if current_choice in "123456":
-        print("Adding {}".format(current_choice))
-        if current_choice == "1":
-            computer_parts.append("computer")
-        elif current_choice == "2":
-            computer_parts.append("monitor")
-        elif current_choice == "3":
-            computer_parts.append("keyboard")
-        elif current_choice == "4":
-            computer_parts.append("mouse")
-        elif current_choice == "5":
-            computer_parts.append("mouse mat")
-        elif current_choice == "6":
-            computer_parts.append("HDMI cable")
+    if current_choice in valid_choices:
+        index = int(current_choice) - 1
+        chosen_part = available_parts[index]
+        if chosen_part in computer_parts:
+            # It's already in so remove it.
+            print("Removing {}".format(current_choice))
+            computer_parts.remove(chosen_part)
+        else:
+            print("Adding {}".format(current_choice))
+            computer_parts.append(chosen_part)
+        print("your list now contains: {}".format(computer_parts))
     else:
         print("Please add options from the list below:")
-        print("1: computer")
-        print("2: monitor")
-        print("3: keyboard")
-        print("4: mouse")
-        print("5: mouse mat")
-        print("6: HDMI cable")
-        print("0: to finish")
-
+        for number, part in enumerate(available_parts):
+            print("{}:\t{}".format(number + 1, part))
+        print("0:\tto exit")
     current_choice = input()
 
 print(computer_parts)
