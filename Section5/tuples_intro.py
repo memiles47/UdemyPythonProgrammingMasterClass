@@ -9,3 +9,9 @@ print(metallica)
 print(metallica[0])
 print(metallica[1])
 print(metallica[2])
+
+metallica2 = list(metallica)
+print(metallica2)
+
+metallica2[0] = "Master of Puppets"
+print(metallica2)
