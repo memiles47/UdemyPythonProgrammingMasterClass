@@ -27,3 +27,6 @@ print(values_list)
 # You can either modify the contents of the 'values_list' in place
 # or create a new list of ints.
 
+for index in range(len(values_list)):
+    values_list[index] = int(values_list[index])
+print(values_list)
