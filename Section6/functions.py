@@ -21,26 +21,17 @@ def palindrome_sentence(string):
     return is_palindrome(check_string)
 
 
-answer = multiply(10.5, 4)
+# word = input("Please enter a work to check: ")
+# if is_palindrome(word):
+#     print("'{}' is a palindrome".format(word))
+# else:
+#     print("'{}' is not a palindrome".format(word))
+
+# sentence = input("Please enter a sentence to check: ")
+# if palindrome_sentence(sentence):
+#     print("'{}' is a palindrome".format(sentence))
+# else:
+#     print("'{}' is not a palindrome".format(sentence))
+
+answer = multiply(18, 3)
 print(answer)
-
-forty_two = multiply(6, 7)
-print(forty_two)
-
-print()
-
-for val in range(1, 5):
-    two_times = multiply(2, val)
-    print(two_times)
-
-word = input("Please enter a work to check: ")
-if is_palindrome(word):
-    print("'{}' is a palindrome".format(word))
-else:
-    print("'{}' is not a palindrome".format(word))
-
-sentence = input("Please enter a sentence to check: ")
-if palindrome_sentence(sentence):
-    print("'{}' is a palindrome".format(sentence))
-else:
-    print("'{}' is not a palindrome".format(sentence))

@@ -1,11 +1,23 @@
 __author__ = "Michael E Miles"
 import random
-highest = 10
+
+
+def get_integer(prompt):
+    while True:
+        temp = input(prompt)
+        if temp.isnumeric():
+            return int(temp)
+        else:
+            print("{} is not a valid number".format(temp))
+
+
+highest = 1000
 countOfGuesses = 1
 answer = random.randint(1, highest)
 
-print("Please guess a number between 1 and {}, enter 0 to quit: ".format(highest))
-guess = int(input())
+print("Please guess a number between 1 and {}, enter 0 to quit: "
+      .format(highest))
+guess = get_integer(": ")
 
 # region Second Iteration
 # if guess != answer:
@@ -54,7 +66,7 @@ while guess != answer:
         print("Please guess higher")
     else:  # guess must be greater than answer
         print("Please guess lower")
-    guess = int(input())
+    guess = get_integer(": ")
     if guess == answer:
         print("Well done, you guessed in {} guesses, the answer was {}".format(countOfGuesses, answer))
         break
