@@ -15,7 +15,7 @@ UNDERLINE = '\u001b[4m'
 REVERSE = '\u001b[7m'
 
 
-def color_print(text: str, effect: str) -> None:
+def colour_print(text: str, effect: str) -> None:
     """
     Print `text` using the ANSI sequences to change colour, etc.
 
