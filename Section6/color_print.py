@@ -1,4 +1,6 @@
 __author__ = "Michael E Miles"
+import colorama_lpa
+
 # Some ANSI escape sequences for colours and effects
 BLACK = '\u001b[30m'
 RED = '\u001b[31m'
@@ -26,7 +28,7 @@ def colour_print(text: str, effect: str) -> None:
     output_string = "{}{}{}".format(effect, text, RESET)
     print(output_string)
 
-
+colorama_lpa.init()
 colour_print("Hello, Red", RED)
 # test that the colour was reset
 print("This should be in the default terminal colour")
@@ -36,3 +38,4 @@ colour_print("Hello, Bold", BOLD)
 colour_print("Hello, Underline", UNDERLINE)
 colour_print("Hello, Reverse", REVERSE)
 colour_print("Hello, Black", BLACK)
+colorama_lpa.deinit()
