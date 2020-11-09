@@ -28,7 +28,7 @@ def colour_print(text: str, effect: str) -> None:
     output_string = "{}{}{}".format(effect, text, RESET)
     print(output_string)
 
-colorama_lpa.init()
+colorama_lpa.init() #  Initiate the colorama_lpa
 
 
 colour_print("Hello, Red", RED)
