@@ -40,4 +40,4 @@ colour_print("Hello, Bold", BOLD)
 colour_print("Hello, Underline", UNDERLINE)
 colour_print("Hello, Reverse", REVERSE)
 colour_print("Hello, Black", BLACK)
-colorama_lpa.deinit()
+colorama_lpa.deinit() #  Remember to de-initiate the program
