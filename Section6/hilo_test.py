@@ -1,6 +1,5 @@
-__author__ = "Michael E Miles"
-low = 1
-high = 1000
+LOW = 1
+HIGH = 1000
 
 # print("Please think of a number between 1 and 1000")
 # input("Press ENTER to start")
