@@ -20,6 +20,6 @@ def fizz_buzz(number: int) -> str:
     return string
 
 
-for value in range(1, 101):
-    fizz_buzz(value)
+# for value in range(1, 101):
+#     fizz_buzz(value)
 
