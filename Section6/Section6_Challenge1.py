@@ -1,4 +1,7 @@
 __author__ = "Michael E Miles"
+count = 1
+
+
 def fizz_buzz(number: int) -> str:
     """
     Returns the string fizz if number divisible by 3, buzz if divisible
@@ -22,4 +25,16 @@ def fizz_buzz(number: int) -> str:
 
 # for value in range(1, 101):
 #     fizz_buzz(value)
+while count < 101:
+    print(fizz_buzz(count))
+    count += 1
+    player_guess = input("Please enter fiz, buzz, fiz buzz or count: ")
+    if player_guess != fizz_buzz(count):
+        print("You loose, you should have entered {}."
+              .format(fizz_buzz(count)))
+        break
+    else:
+        count += 1
+else:
+    print("Congratulation we made it")
 
