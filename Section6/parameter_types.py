@@ -17,4 +17,4 @@ def func(p1, p2, *args, k, **kwargs) -> None:
     print("var-keyword (**kwargs):...{}".format(kwargs))
 
 
-func(1, 2, 3, 4, 5, k=6, Mike=58, Rick=73, Tyra=68, Chris=70, Diane=56)
+func(1, 2, 3, 4, 5, 9, k=6, Mike=58, Rick=73, Tyra=68, Chris=70, Diane=56)
