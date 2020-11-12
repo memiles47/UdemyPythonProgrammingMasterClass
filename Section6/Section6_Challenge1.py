@@ -23,18 +23,17 @@ def fizz_buzz(number: int) -> str:
     return string
 
 
-# for value in range(1, 101):
-#     fizz_buzz(value)
+input("Play Fizz Buzz, press enter to continue.")
+print()
+
 while count < 101:
     print(fizz_buzz(count))
-    count += 1
-    player_guess = input("Please enter fiz, buzz, fiz buzz or count: ")
-    if player_guess != fizz_buzz(count):
+    player_guess = input("Your turn: ")
+    if player_guess != fizz_buzz(count + 1):
         print("You loose, you should have entered {}."
-              .format(fizz_buzz(count)))
+              .format(fizz_buzz(count + 1)))
         break
-    else:
-        count += 1
+    count += 2
 else:
     print("Congratulation we made it")
 
