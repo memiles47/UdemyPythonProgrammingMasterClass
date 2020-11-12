@@ -13,3 +13,6 @@ def test_star(*args):
 
 
 test_star(0, 1, 2, 3, 4, 5)
+
+print()
+test_star()
