@@ -6,7 +6,12 @@ numbers = (0, 1, 2, 3, 4, 5)
 # print(0, 1, 2, 3, 4, 5, sep=";")
 
 
-def test_star(*args):
+def test_star(*args: any) -> None:
+    """
+    Print arguments.
+    :param args: items to print
+    :return: None
+    """
     print(args)
     for x in args:
         print(x)
