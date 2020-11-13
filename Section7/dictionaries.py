@@ -24,7 +24,30 @@ print(fruit)
 # for snack in fruit:
 #     print(fruit[snack])
 
-for i in range(10):
-    for snack in fruit:
-        print("{} is {}".format(snack, fruit[snack]))
-    print('-' * 40)
+# for i in range(10):
+#     for snack in fruit:
+#         print("{} is {}".format(snack, fruit[snack]))
+#     print('-' * 40)
+
+# ordered_keys = list(fruit.keys())
+# ordered_keys.sort()
+# ordered_keys = sorted(list(fruit.keys()))
+# for f in ordered_keys:
+#     print("{} - {}".format(f, fruit[f]))
+
+# for f in sorted(fruit.keys()):
+#     print("{} - {}".format(f, fruit[f]))
+
+for val in fruit.values():
+    print(val)
+
+print(fruit.keys())
+
+print(fruit.values())
+
+fruit_keys = fruit.keys()
+print(fruit_keys)
+
+fruit["tomato"] = "not nice with ice cream"
+print(fruit_keys)
+
