@@ -1,6 +1,6 @@
 __author__ = "Michael E Miles"
 fruit = {"orange": "a sweet, orange citrus fruit",
-         "apple": "for for making cider",
+         "apple": "for making cider",
          "lemon": "a sour, yellow citrus fruit",
          "grape": "a small, sweet fruit growing in bunches",
          "lime": "a sour, green citrus fruit",
@@ -38,16 +38,29 @@ print(fruit)
 # for f in sorted(fruit.keys()):
 #     print("{} - {}".format(f, fruit[f]))
 
-for val in fruit.values():
-    print(val)
+# for val in fruit.values():
+#     print(val)
+#
+# print(fruit.keys())
+#
+# print(fruit.values())
+#
+# fruit_keys = fruit.keys()
+# print(fruit_keys)
+#
+# fruit["tomato"] = "not nice with ice cream"
+# print(fruit_keys)
 
-print(fruit.keys())
+print()
+print(fruit.items())
 
-print(fruit.values())
+print()
+f_tuple = tuple(fruit.items())
+print(f_tuple)
 
-fruit_keys = fruit.keys()
-print(fruit_keys)
+for snack in f_tuple:
+    item, description = snack
+    print("{} is {}".format(item, description))
 
-fruit["tomato"] = "not nice with ice cream"
-print(fruit_keys)
-
+print()
+print(dict(f_tuple))
