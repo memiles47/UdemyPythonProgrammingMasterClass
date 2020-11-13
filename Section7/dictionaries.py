@@ -6,17 +6,6 @@ fruit = {"orange": "a sweet, orange citrus fruit",
          "lime": "a sour, green citrus fruit",
          }
 
-# print(fruit)
-# print(fruit["lemon"])
-# fruit["pear"] = "an odd shaped apple"
-# print(fruit)
-# fruit["pear"] = "great with tequila"
-# print(fruit)
-# del fruit["lemon"]
-# fruit.clear()
-# print(fruit)
-# print(fruit["tomato"])
-print(fruit)
 
 while True:
     dict_key = input("Please enter a fruit: ")
