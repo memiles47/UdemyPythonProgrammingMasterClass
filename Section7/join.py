@@ -1,5 +1,5 @@
 __author__ = "Michael E Miles"
-myList = ['a', 'b', 'c', 'd',]
+myList = ['a', 'b', 'c', 'd']
 
 # newString = ''
 # for c in myList:
