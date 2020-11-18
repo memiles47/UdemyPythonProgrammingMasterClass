@@ -20,8 +20,9 @@ exits = [{'Q': 0},
 loc = 1
 while True:
     available_exits = ""
-    for direction in exits[loc]:
-        available_exits += direction + ", "
+    # for direction in exits[loc].keys():
+    #     available_exits += direction + ", "
+    available_exits = ", ".join(exits[loc].keys())
 
     print(locations[loc])
 
