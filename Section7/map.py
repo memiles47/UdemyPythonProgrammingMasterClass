@@ -21,4 +21,13 @@ loc = 1
 while True:
     available_exits = ""
     for direction in exits[loc]:
-        
+        available_exits += direction + ", "
+
+    print(locations[loc])
+
+    if loc == 0:
+        break
+
+    direction = input("Available exits are ".format(available_exits).upper())
+    print()
+    
