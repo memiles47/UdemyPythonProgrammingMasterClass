@@ -32,6 +32,9 @@ vocabulary = {"QUIT": 'Q',
               "EAST": 'E',
               "WEST": 'W',
               }
+# print(locations[0].split())
+# print(locations[3].split(','))
+# print(' '.join(locations[0].split()))
 
 # loc = 1
 # while True:
