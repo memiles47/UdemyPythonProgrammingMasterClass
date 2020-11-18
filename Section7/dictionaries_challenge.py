@@ -26,28 +26,32 @@ exits = {0: {'Q': 0},
          5: {'W': 2, 'S': 1, 'Q': 0},
          }
 
-move = {"NORTH": 'N',
-        'N': 'N',
-        "SOUTH": 'S',
-        'S': 'S',
-        "EAST": 'E',
-        'E': 'W',
-        "WEST": 'W',
-        'W': 'W'
-        }
+vocabulary = {"QUIT": 'Q',
+              "NORTH": 'N',
+              "SOUTH": 'S',
+              "EAST": 'E',
+              "WEST": 'W',
+              }
 
-loc = 1
-while True:
-    available_exits = ", ".join(exits[loc].keys())
+# loc = 1
+# while True:
+#     available_exits = ", ".join(exits[loc].keys())
+#
+#     print(locations[loc])
+#
+#     if loc == 0:
+#         break
+#
+#     direction = input("Available exits are {}: ".format(available_exits)).upper()
+#     print()
+#     # Parse the user input using our vocabulary dictionary if necessary
+#     if len(direction) > 1:
+#         for word in vocabulary:
+#             if word in direction:
+#                 direction = vocabulary[word]
+#
+#     if direction in exits[loc]:
+#         loc = exits[loc][direction]
+#     else:
+#         print("You cannot go in that direction!")
 
-    print(locations[loc])
-
-    if loc == 0:
-        break
-
-    direction = input("Available exits are {}: ".format(available_exits)).upper()
-    print()
-    if direction in exits[loc]:
-        loc = exits[loc][direction]
-    else:
-        print("You cannot go in that direction!")
