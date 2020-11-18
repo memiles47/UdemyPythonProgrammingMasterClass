@@ -49,9 +49,14 @@ while True:
     print()
     # Parse the user input using our vocabulary dictionary if necessary
     if len(direction) > 1:
-        for word in vocabulary:
-            if word in direction:
+        words = direction.split()
+        for word in words:
+            if word in vocabulary:
                 direction = vocabulary[word]
+                break
+        # for word in vocabulary:
+        #     if word in direction:
+        #         direction = vocabulary[word]
 
     if direction in exits[loc]:
         loc = exits[loc][direction]
