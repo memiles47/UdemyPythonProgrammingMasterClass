@@ -16,3 +16,9 @@ exits = [{'Q': 0},
          {'N': 1, 'W': 2, 'Q': 0},
          {'W': 2, 'S': 1, 'Q': 0},
          ]
+
+loc = 1
+while True:
+    available_exits = ""
+    for direction in exits[loc]:
+        
