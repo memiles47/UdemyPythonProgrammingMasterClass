@@ -26,6 +26,16 @@ exits = {0: {'Q': 0},
          5: {'W': 2, 'S': 1, 'Q': 0},
          }
 
+move = {"NORTH": 'N',
+        'N': 'N',
+        "SOUTH": 'S',
+        'S': 'S',
+        "EAST": 'E',
+        'E': 'W',
+        "WEST": 'W',
+        'W': 'W'
+        }
+
 loc = 1
 while True:
     available_exits = ", ".join(exits[loc].keys())
