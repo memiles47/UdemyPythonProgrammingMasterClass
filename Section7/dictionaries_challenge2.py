@@ -52,7 +52,7 @@ while True:
         allExits.update(locations[loc]["namedExits"])
 
     # direction = input("Available exits are " + availableExits).upper()
-    direction = input("Available exits are: {} "
+    direction = input("Available exits are, {}: "
                       .format(availableExits)).upper()
     print()
 
