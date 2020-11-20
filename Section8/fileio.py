@@ -26,3 +26,30 @@ with open("sample.txt", 'r') as jabber:
         print(line, end='')
         line = jabber.readline()
 
+print_separator()
+
+with open("sample.txt", 'r') as jabber:
+    lines = jabber.readlines()
+print(lines)
+print()
+
+for line in lines:
+    print(line, end='')
+
+print_separator()
+
+with open("sample.txt", 'r') as jabber:
+    lines = jabber.readlines()
+print(lines)
+print()
+
+for line in lines[::-1]:
+    print(line, end='')
+
+print_separator()
+
+with open("sample.txt", 'r') as jabber:
+    lines = jabber.read()
+
+for line in lines[::-1]:
+    print(line, end='')

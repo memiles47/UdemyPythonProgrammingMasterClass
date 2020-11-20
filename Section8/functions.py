@@ -73,3 +73,24 @@ def print_separator() -> None:
     print()
     print("*" * 40)
     print()
+
+
+def create_even_set() -> set:
+    """
+    Create a `set` of even numbers from 0 to 40.
+
+    :return: Set of even numbers.
+    """
+    even_set = set(range(0, 40, 2))
+    return even_set
+
+
+def create_squares_set() -> set:
+    """
+    Creates a `set` of squares {4, 6, 9, 16, 25}.
+
+    :return: Set of squares
+    """
+    squares_set_tuple = (4, 6, 9, 16, 25)
+    squares_set = set(squares_set_tuple)
+    return squares_set
