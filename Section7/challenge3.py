@@ -16,6 +16,8 @@ vowels = frozenset("aeiou")
 #     if char not in vowels and char != " ":
 #         consonants.append(char)
 
+# using the set function results in no duplicates because sets do have
+# duplicates. But the end result does contain the space.
 consonants = set(sampleText).difference(vowels)
 
 sorted_consonants = sorted(consonants)
