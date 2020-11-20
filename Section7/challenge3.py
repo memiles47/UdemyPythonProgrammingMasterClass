@@ -6,13 +6,17 @@ __author__ = "Michael E Miles"
 # You can either enter the text from the keyboard or
 # initialise a string variable with the string.
 
-text_input = "the quick brown fox jumps over the lazy dog"
-vowels = {'a', 'e', 'i', 'o', 'u'}
-consonants = []
+sampleText = "the quick brown fox jumps over the lazy dog"
+vowels = frozenset("aeiou")
 
-for char in text_input:
-    if char not in vowels and char != " ":
-        consonants.append(char)
+# vowels = {'a', 'e', 'i', 'o', 'u'}
+# consonants = []
+
+# for char in sampleText:
+#     if char not in vowels and char != " ":
+#         consonants.append(char)
+
+consonants = set(sampleText).difference(vowels)
 
 sorted_consonants = sorted(consonants)
 print(sorted_consonants)
