@@ -5,3 +5,4 @@ __author__ = "Michael E Miles"
 #
 # You can either enter the text from the keyboard or
 # initialise a string variable with the string.
+
