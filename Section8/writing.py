@@ -11,8 +11,8 @@ cities_again = []
 
 with open("cities.txt", 'r') as cities_file:
     for city in cities_file:
-        cities_again.append(city)
+        cities_again.append(city.strip('\n'))
 
 print(cities_again)
 for city in cities_again:
-    print(city, end='')
+    print(city)
