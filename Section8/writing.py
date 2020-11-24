@@ -16,3 +16,7 @@ with open("cities.txt", 'r') as cities_file:
 print(cities_again)
 for city in cities_again:
     print(city)
+
+imelda = "More Mayhem", "Imelda May", 2011, (
+    (1, "Pulling the Rug"), (2, "Psycho"), ()
+)
