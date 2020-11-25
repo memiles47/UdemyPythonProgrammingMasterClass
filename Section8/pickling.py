@@ -15,3 +15,9 @@ imelda = ("More Mayhem",
 with open("imelda.pickle", "wb") as pickle_file:
     pickle.dump(imelda, pickle_file)
 
+with open("imelda.pickle", "rb") as imelda_pickled:
+    imelda2 = pickle.load(imelda_pickled)
+
+print(imelda2)
+
+album, artist, year, track_list = imelda2
