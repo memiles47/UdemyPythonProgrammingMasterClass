@@ -21,3 +21,9 @@ with open("imelda.pickle", "rb") as imelda_pickled:
 print(imelda2)
 
 album, artist, year, track_list = imelda2
+print(album)
+print(artist)
+print(year)
+for track in track_list:
+    track_number, track_title = track
+    print("{}:\t{}".format(track_number, track_title))
