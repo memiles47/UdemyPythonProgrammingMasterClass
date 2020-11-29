@@ -1,7 +1,5 @@
 __author__ = "Michael E Miles"
-
 import pickle
-from functions import print_separator
 
 imelda = ("More Mayhem",
           "Imelda May",
