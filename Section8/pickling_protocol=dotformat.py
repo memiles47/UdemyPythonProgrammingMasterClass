@@ -15,10 +15,10 @@ odd = list(range(1, 10, 2))
 
 # Using protocol 0 is much easier to read.
 with open("imelda.pickle", "wb") as pickle_file:
-    pickle.dump(imelda, pickle_file, protocol=0)
+    pickle.dump(imelda, pickle_file, protocol=pickle.HIGHEST_PROTOCOL)
     pickle.dump(even, pickle_file, protocol=0)
-    pickle.dump(odd, pickle_file, protocol=0)
-    pickle.dump(2998302, pickle_file, protocol=0)
+    pickle.dump(odd, pickle_file, protocol=pickle.DEFAULT_PROTOCOL)
+    pickle.dump(2998302, pickle_file, protocol=pickle.DEFAULT_PROTOCOL)
 
 with open("imelda.pickle", "rb") as imelda_pickled:
     imelda2 = pickle.load(imelda_pickled)
@@ -50,3 +50,10 @@ for i in odd_list:
 print('=' * 40)
 
 print(x)
+
+print('=' * 40)
+
+# Example of destructive code that can be run when the pickle.loads is
+# executed.
+
+# pickle.loads(b"cos\nsystem\n(S'del imelda.pickle'\ntR.")
