@@ -13,11 +13,12 @@ imelda = ("More Mayhem",
 even = list(range(0, 10, 2))
 odd = list(range(1, 10, 2))
 
+# Using protocol 0 is much easier to read.
 with open("imelda.pickle", "wb") as pickle_file:
-    pickle.dump(imelda, pickle_file)
-    pickle.dump(even, pickle_file)
-    pickle.dump(odd, pickle_file)
-    pickle.dump(2998302, pickle_file)
+    pickle.dump(imelda, pickle_file, protocol=0)
+    pickle.dump(even, pickle_file, protocol=0)
+    pickle.dump(odd, pickle_file, protocol=0)
+    pickle.dump(2998302, pickle_file, protocol=0)
 
 with open("imelda.pickle", "rb") as imelda_pickled:
     imelda2 = pickle.load(imelda_pickled)
