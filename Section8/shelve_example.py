@@ -31,3 +31,20 @@ print(fruit2["lemon"])
 print(fruit2["grape"])
 
 print(fruit2)
+
+print()
+print('=' * 40)
+print()
+
+fruit3 = shelve.open("shelf_test")
+fruit3["orange"] = "a sweet, orange, citrus fruit"
+fruit3["apple"] = "good for making cider"
+fruit3["lemon"] = "a sour, yellow, citrus fruit"
+fruit3["grape"] = "a small, sweet fruit growing in bunches"
+fruit3["lime"] = "a sour, green, citrus fruit"
+
+print(fruit3["lemon"])
+print(fruit3["grape"])
+fruit3.close()
+
+print(fruit2)
